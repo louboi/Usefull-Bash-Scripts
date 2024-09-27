@@ -1,3 +1,4 @@
+#! paste your bash location here
 
 #-----------------------------------------------------PRE-EVENT SET-UP-----------------------------------------------------
 # Update and upgrade everything before moving on
