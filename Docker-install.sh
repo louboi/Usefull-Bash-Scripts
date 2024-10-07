@@ -29,7 +29,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 echo "You can now test that the install has worked by typing -- sudo docker run hello-world"
 
 #-----------------------------------------------------PORTAINER-----------------------------------------------------
-# Create the volume used to store protainer data
+# Create the volume used to store portainer data
 docker volume create portainer_data
 
 # Download and install the docker container
