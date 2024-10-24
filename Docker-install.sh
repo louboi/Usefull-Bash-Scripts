@@ -28,10 +28,10 @@ echo "You can now test that the install has worked by typing -- sudo docker run 
 
 #-----------------------------------------------------PORTAINER-----------------------------------------------------
 # Create the volume used to store portainer data
-docker volume create portainer_data
+sudo docker volume create portainer_data
 
 # Download and install the docker container
-docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.2
+sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.2
 
 # Verify everything is running
 sudo docker ps -a
